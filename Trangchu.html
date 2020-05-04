@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="taoid.js"></script>
+    <script src="sanpham.js"></script>
+    <script src="giohang.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="thanhden">
+            <div class="tt">
+                <a class="sdt" href="sdt.html">Hotline: 0966 158 666 ( 8h-12h , 13h20-17h )</a>
+                <a class="bando" href="bando.html">Tìm cửa hàng</a>
+                <a class="hoptac" href="hoptac.html">Liên hệ hợp tác</a>
+                <a class="them" href="themsanpham.html">Thêm sản phẩm</a>
+                <a class="kiemtra" href="kiemtra.html">Kiểm tra đơn hàng</a>
+                <a class="dangnhap" href="dangnhap.html">Đăng nhập</a>
+                <div class="gach">|</div>
+                <a class="dangki" href="dangki.html">Đăng kí</a>
+            </div>
+        </div>
+        <div class="thanhmenu">
+        <div class="mathang">
+            <div class="logo">
+                <a href="Trangchu.html">
+                    <img src="images/logo.jpg" width="200px" height="60px">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="sanpham.html">Điện Thoại</a>
+                        <ul>
+                            <li><a href="sanpham.html">Apple</a></li>
+                            <li><a href="somilegant.html">SamSung</a></li>
+                            <li><a href="vest.html">Oppo</a></li>
+                            <li><a href="vestelegant.html">VSmart</a></li>
+                            <li><a href="aophong.html">Xiaomi</a></li>
+                            <li><a href="quankaki.html">Nokia</a></li>
+                            <li><a href="quanau.html">Realme</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gioithieu.html">Lap Top</a>
+                        <ul>
+                            <li><a href="sanpham.html">Asus</a></li>
+                            <li><a href="somilegant.html">Dell</a></li>
+                            <li><a href="vest.html">Macbook</a></li>
+                            <li><a href="vestelegant.html">HP</a></li>
+                            <li><a href="aophong.html">LG</a></li>
+                            <li><a href="quankaki.html">Lenovo</a></li>
+                            <li><a href="quanau.html">Máy Tính Để Bàn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="lienhe.html">Máy Ảnh</a>
+                        <ul>
+                            <li><a href="sanpham.html">Canon</a></li>
+                            <li><a href="somilegant.html">Sony</a></li>
+                            <li><a href="vest.html">Fujifilm</a></li>
+                            <li><a href="quankaki.html">Nikon</a></li>
+                            <li><a href="quanau.html">Gopro</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tintuc.html">Phụ Kiện</a>
+                        <ul>
+                            <li><a href="tintuc.html">Tai Nghe</a></li>
+                            <li><a href="tuyendung.html">Sạc Pin Dự Phòng</a></li>
+                            <li><a href="ctkh.html">Dây Cáp Sạc</a></li>
+                            <li><a href="huongdan.html">Loa</a></li>
+                            <li><a href="tinnoibo.html">Đồng Hồ Thông Minh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="timkiem">
+                <input type="text" placeholder="     Nhập thông tin cần tìm kiếm...">
+                <input type="button">
+            </div>
+            <div class="tim">
+                <a href="sanphamyeuthich.html">
+                    <img src="images/tim.jpg" width="40px" height="35px">
+                </a>
+            </div>
+            <div class="giodo">
+                <a href="giohang.html">
+                    <img src="images/giodo.jpg" width="40px" height="35px">
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="slider">
+            <img border="0" src="images/slider.jpg" width="1100px" height="400px">
+        </div>
+    </header>
+    <section>
+        <div id="phangiua">
+            <div class="sanphamhot">
+                <div class="sphot">
+                    Sản Phẩm Hot
+                </div>
+            </div>
+            <div id="danhsach">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="phancuoi">
+            <div class="phancuoi1">
+                <div id="dieukhoan">
+                    <div class="dieukhoan1">Điều khoản</div>
+                    <div class="chinhsach">Chính sách bảo mật</div>
+                    <div class="hdsd">Hướng dẫn sử dụng</div>
+                    <div class="link">copyright Thegioididong.com. Powered by Haravan interprise</div>
+                </div>
+                <div class="chungnhan">
+                    <img src="images/chungnhan.jpg" width="220px" height="75px">
+                </div>
+                <div class="giay">Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992, được sửa đổi lần thư 20 ngày
+                    28/12/2015 bởi Sở Kế hoạch và Đầu Tư TP.HCM </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var danhSachSanPhamChuan = new Array();
+        // 1. Lấy dữ liệu từ localStorage lên
+        var danhSachSanPham = JSON.parse(localStorage.getItem("danhSachSanPhamASM"));
+        if (danhSachSanPham == null) {
+            danhSachSanPham = new Array();
+            var DanhSachSP = taoDanhSachSanPham();
+            localStorage.setItem("danhSachSanPhamASM", JSON.stringify(DanhSachSP));
+            for (var i = 0; i < 20; i++) {
+                var sanPham = taoDoiTuongSanPham(DanhSachSP[i].hinhAnh, DanhSachSP[i].ten, DanhSachSP[i].giaGoc, DanhSachSP[i].phanTramGiamGia, DanhSachSP[i].khuVuc);
+                danhSachSanPhamChuan.push(sanPham);
+            }
+        }
+        // Thêm dữ liệu vào localStorage nếu như chưa có dữ liệu
+        danhSachSanPhamChuan = danhSachSanPham;
+
+        // Load dữ liệu lên web 
+        var html = chuyenDanhSachSanPhamThanhHTML(danhSachSanPhamChuan);
+        var hienThiSanPham = document.getElementById('danhsach');
+        hienThiSanPham.innerHTML = html;
+
+        function taoDanhSachSanPham(){
+            var iphone11 = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-green-600x600.jpg','Iphone 11 Pro Max',54000000,10,'Hà Nội');
+            var iphoneX = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-2-400x460.png','Iphone X',35000000,10,'TP.Hồ Chí Minh');
+            var iphone7 = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-gold-600x600.jpg','Iphone 7',15000000,10,'TP.Hồ Chí Minh');
+            var xiaomi8 = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-200x200.jpg','Xiaomi Redmi 8',8000000,15,'Đà Nẵng');
+            var xiaomi10 = taoDoiTuongSanPham('https://www.xtmobile.vn/vnt_upload/product/Hinh_DT/thumbs/600_xiaomi-mi-note-10-xtmobile.jpg','Xiaomi Mi Note 10',15000000,20,'TP.Buôn Mê Thuật');
+            var samsung10 = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/191276/samsung-galaxy-note-10-silver-400x400.jpg','Samsung Galaxy Note10',25000000,10,'TP.Hồ Chí Minh');
+            var samsung71 = taoDoiTuongSanPham('https://didongviet.vn/pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/g/a/galaxy-a71-trang-didongviet_1_1_1.jpg','Samsung Galaxy A71',45000000,10,'TP.Buôn Mê Thuật');
+            var nokia72 = taoDoiTuongSanPham('https://didongviet.vn/pub/media/catalog/product//n/o/nokia-7-2-xanh-didongviet_2_1_4.jpg','Nokia 7.2',28000000,18,'TP.Hồ Chí Minh');
+            var iphone9 = taoDoiTuongSanPham('https://www.viettablet.com/images/thumbnails/480/516/detailed/26/nokia-9-pureview-viettablet.jpg','Nokia 9 PureView',23000000,20,'Hải Phòng');
+            var Realme = taoDoiTuongSanPham('https://cdn.tgdd.vn/Products/Images/42/214644/realme-6-xanh-600x600-600x600.jpg','Realme 6',17000000,10,'Đà Lạt');
+            for(var i = 0 ; i <2 ; i++){
+                danhSachSanPham.push(iphone11);
+                danhSachSanPham.push(iphoneX);
+                danhSachSanPham.push(iphone7);
+                danhSachSanPham.push(xiaomi8);
+                danhSachSanPham.push(xiaomi10);
+                danhSachSanPham.push(samsung10);
+                danhSachSanPham.push(samsung71);
+                danhSachSanPham.push(nokia72);
+                danhSachSanPham.push(iphone9);
+                danhSachSanPham.push(Realme);
+            }
+            return danhSachSanPham;
+        }
+
+        function oclickDuaVaoGioHang(idSanPham) {
+            alert('Sản phẩm được thêm vào giỏ hàng thành công');
+            /* Bước 1: định hình đối tượng giỏ hàng là một danh sách các item của giỏ hàng. đối tượng item của giỏ hàng
+                1. id của sản phẩm
+                2. số lượng là bao nhiêu*/
+            /* Bước 2: Tạo ra 1 hàm tạo nhanh đối tượng giỏ hàng */
+            /* Bước 3: lấy danh sách sản phẩm trong giỏ hàng từ localStorage lên */
+            var danhSachItemGioHang = layGioHangTuLocalStorage();
+            /* Bước 4: kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưưa */
+            var kiemTra = false;
+            for (var i = 0; i < danhSachItemGioHang.length; i++) {
+                var itemGioHangHienTai = danhSachItemGioHang[i];
+                if (itemGioHangHienTai.idSanPham == idSanPham) {
+                    danhSachItemGioHang[i].soLuong++;
+                    kiemTra = true;
+                }
+            }
+            if (kiemTra == false) {
+                var itemGioHang = taoDoiTuongItemGioHang(idSanPham, 1);
+                danhSachItemGioHang.push(itemGioHang);
+            }
+            /* Bước 5: Lưu trữ vào localStorage*/
+            luuGioDoXuongLocalStorage(danhSachItemGioHang);
+
+        }
+    </script>
+</body>
+
+</html>

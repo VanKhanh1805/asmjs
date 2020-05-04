@@ -1,0 +1,351 @@
+body{
+	margin: 0px;
+	font-family: arial;/*kiểu chữ không chân*/
+	font-size: 14px;
+	color: #333;
+}
+h1,h2,h3{
+	/*bỏ thuộc tính tự căn của thẻ*/
+	margin: 0px;
+	padding: 0px;
+}
+ul,ol{
+	margin: 0px;
+	padding: 0px;
+}
+#thanhden{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+}
+.tt{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+}
+.tt a{
+	text-decoration: none;
+	color: white;
+}
+.tt a:hover{
+	background-color: white;
+	color: black;
+}
+.sdt{
+	width: 330px;
+	height: 39px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+}
+.bando{
+	width: 125px;
+	height: 39px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.hoptac{
+	width: 134px;
+	height: 39px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.them{
+	width: 155px;
+	height: 39px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.kiemtra{
+	width: 155px;
+	height: 39px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.dangnhap{
+	width: 90px;
+	height: 39px;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 40px;
+}
+.gach{
+	width: 10px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+}
+.dangki{
+	width: 80px;
+	height: 39px;
+	float: left;
+	text-align: center;
+    line-height: 40px;
+}
+.thanhmenu{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+}
+.mathang{
+	width: 1200px;
+	height: 60px;
+    margin: 0 auto;
+}
+.logo{
+	width: 200px;
+	height: 60px;
+	float: left;
+}
+.menu{
+	width: 550px;
+	height: 45px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    z-index: 3;
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu > ul > li{	
+	line-height: 45px;
+	margin-left: 50px;
+	list-style: none;
+	text-decoration: none;	
+	float: left;
+	position: relative;
+}
+.menu > ul > li > a{
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+}
+.menu > ul > li > ul{
+	width: 250px;
+	display: none;
+	position: absolute;
+	background-color: #cccccc;
+    list-style: none;
+}
+.menu > ul > li > ul > li > a{
+	color: black;
+}
+.menu > ul > li:hover ul{
+	display: block;
+}
+.menu > ul > li > ul > li{
+	border-bottom: 1px solid #fff;
+	padding: 3px 8px;
+}
+.menu ul > li > ul > li:hover{
+	background-color: #ccffff;
+	transition: all 0.25s;
+}
+.timkiem{
+	width: 250px;
+	height: 35px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 35px;
+	line-height: 30px;
+	font-size: 8px;
+	padding-left: 20px;
+	background-color: #bab3b3;
+	border-radius: 5px;
+}
+.timkiem input:first-child{
+	width: 215px;
+	height: 35px;
+	padding: 0px;
+	border: none;
+	color: white;
+	float: left;
+	background-color: transparent;
+	color: white;
+}
+.timkiem input:last-child{
+	width: 35px;
+	height: 35px;
+	padding: 0px;
+	border: none;
+	background-color: black;
+	background-image: url(./images/kinh.jpg);
+	background-repeat: no-repeat;
+	text-indent: -3000px;
+}
+.tim{
+	width: 40px;
+	height: 35px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.giodo{
+	width: 40px;
+	height: 35px;
+	float: left;
+	margin-left: 2px;
+	margin-top: 15px;
+}
+.slider{
+	width: 1100px;
+	height: 450px;
+	margin: 0 auto;
+}
+.bx-wrapper{
+	border: none !important;
+}
+header{
+	margin-bottom: 5px;
+}
+#phangiua{
+	width: 1100px;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+.phancuoi{
+	width: 100%;
+	height: 75px;
+	background-color: black;
+}
+.phancuoi1{
+	width: 1200px;
+	height: 75px;
+	margin: 0 auto;
+}
+#dieukhoan{
+	width: 400px;
+	height: 75px;
+	color: white;
+	float: left;
+}
+.dieukhoan1{
+	width: 100px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+}
+.chinhsach{
+	width: 140px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+}
+.hdsd{
+	width: 160px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+}
+.link{
+	width: 400px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+}
+.chungnhan{
+	width: 220px;
+	height: 75px;
+	float: left;
+	margin-left: 170px;
+}
+.giay{
+	width: 400px;
+	height: 55px;
+	color: white;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+}
+.hinhAnh img {
+    width: 15%;
+}
+input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.gio-hang {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px #ddd;
+    padding: 20px;
+    margin: auto;
+    max-width: 1100px;
+}
+.item-gio-hang {
+    display: flex;
+    flex-direction: row;
+    ;
+    align-items: center;
+}
+.item-gio-hang .hinhAnh img {
+    width: 60px;
+    height: 60px;
+}
+.item-gio-hang .hinhAnh,
+.soLuong,
+.tongTien {
+    flex: 1;
+    margin-left: 20px;
+}
+.item-gio-hang .gia {
+    flex: 2;
+}
+.item-gio-hang .ten {
+    flex: 3;
+}
+.item-gio-hang .gia .giaGoc {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #aaa;
+}
+.item-gio-hang .gia .giaBan {
+    color: red;
+}
+.item-gio-hang .hanhDong i:hover{
+    color: #F7452E;
+}
+.chitiet{
+    width: 1100px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px #ddd;
+    padding: 20px;
+    margin: auto;
+    max-width: 1100px;
+}
+.chitiet li{
+    display: inline-block;
+    margin-left: 50px;
+    color: #F7452E;
+}
+.chitiet .li1{
+    margin-left: 250px;
+}
+.chitiet .li2{
+    margin-left: 200px;
+}
+.chitiet .li3{
+    margin-left: 100px;
+}
